@@ -1,0 +1,41 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input {
+    padding: .5rem;
+}
+input[type="text"],
+input[type="number"] {
+    width: 250px;
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+#movie-container {
+    border: 1px solid grey;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+#sort {
+    border-bottom: 1px solid grey;
+}
+.sort-item {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+.movie {
+    padding: 1rem;
+    border: 1px solid rgb(191, 191, 191);
+    margin-top: .5rem;
+}
+.movie .title {
+    margin-right: 2rem;
+}
+button {
+    color: red;
+    float: right;
+}
