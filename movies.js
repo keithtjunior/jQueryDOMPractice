@@ -22,6 +22,7 @@ $(document).ready(function(){
         //clear input values
         $('#title').val('');
         $('#rating').val('');
+        $('#title').focus();
 
         updateList();
     });
@@ -45,7 +46,8 @@ $(document).ready(function(){
     //remove movie element from movie list on button click
     //remove movie obj from userMovie based on movie id/key
     $('#movie-list').on('click', '.delete', function(){
-        let id = Number($(this).parent().attr('id').substr(-1));
+        //let id = Number($(this).parent().attr('id').substr(-1));
+        let id = Number($(this).parent().attr('id').split("-").pop());
         userMovies.removeMovie(id)
         $(this).parent().remove();
     });
